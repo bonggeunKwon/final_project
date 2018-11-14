@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+							"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+							
+<mapper namespace="repository.mapper.MemberMapper">
+	<cache />
+	<!-- id - repository의 메소드 이름 -->
+	<resultMap type="Member" id="baseResultMap">
+		<id column="USER_ID" jdbcType="VARCHAR" property="userId"/>
+		<result column="USER_PASS" jdbcType="VARCHAR" property="userPass"/>
+		<result column="USER_NAME" jdbcType="VARCHAR" property="userName"/>
+		<result column="USER_EMAIL" jdbcType="VARCHAR" property="userEmail"/>
+		<result column="MAIL_RECEIVE" jdbcType="VARCHAR" property="mailReceive"/>
+		<result column="USER_PHONE" jdbcType="VARCHAR" property="userPhone"/>
+		<result column="USER_POST" jdbcType="BIGINT" property="userPost"/>
+		<result column="USER_ADD1" jdbcType="VARCHAR" property="userAdd1"/>
+		<result column="USER_ADD2" jdbcType="VARCHAR" property="userAdd2"/>
+		<result column="USER_AGR" jdbcType="VARCHAR" property="userAgr"/>
+		<result column="USER_Sep" jdbcType="VARCHAR" property="userSep"/>
+	</resultMap>
+	<insert id="insertMember" parameterType="Member">
+		INSERT INTO MEMBER(USER_ID, USER_PASS, USER_NAME, USER_EMAIL, MAIL_RECEIVE, USER_PHONE, USER_POST, USER_ADD1, USER_ADD2, USER_AGR, USER_SEP)
+		VALUES (#{userId}, #{userPass}, #{userName}, #{userEmail}, #{mailReceive}, #{userPhone}, #{userPost}, #{userAdd1}, #{userAdd2}, #{userAgr}, #{userSep})
+	</insert>
+	
+</mapper>
