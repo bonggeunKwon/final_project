@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.util.Date;
-
-public class Pb {
+@SuppressWarnings("serial")
+public class Pb implements Serializable{
 	private Long pbNum;
 	private Long parkNum;
 	private String entId;

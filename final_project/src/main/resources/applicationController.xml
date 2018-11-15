@@ -7,4 +7,5 @@
 						
 	<bean class="controller.MemberController" />
 	<bean class="controller.LoginController" />
+	<bean class="controller.BookController" />
 </beans>
