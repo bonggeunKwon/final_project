@@ -70,7 +70,7 @@
 </head>
 <body>
 <div class="container mx-auto d-block">
-	<form name="joinform" id="joinform" action="" method="post">
+	<form name="joinform" id="joinform" action="join" method="post">
 	<table class="table table-bordered" border="1">
 	<tr><td colspan="2" align="center"><h2>회원 가입</h2></td></tr>
 		<tr>
