@@ -59,14 +59,9 @@
 <br>
 <table align="center" width="700" border="1">
 	<tr>
-		<td>정기권(시간별) 선택</td>
+		<td>수량(1시간권) 선택</td>
 		<td>
-		<select name=pb_standard>
-		<option value='1시간권'>1시간권</option>
-        <option value='3시간권'>3시간권</option>
-        <option value='5시간권'>5시간권</option>
-        <option value='종일권'>종일권</option>
-	</select>
+		<input type="number" name="PB_P_NUM" size=10  />장
 		</td>
 	</tr>
 	<tr>
