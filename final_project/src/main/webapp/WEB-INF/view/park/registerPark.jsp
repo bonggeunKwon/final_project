@@ -43,6 +43,11 @@
          <option value='제주특별시'>제주특별시</option>
       </select></td></tr>
 <tr><td><label for="park_add">주차장주소</label></td><td><input type="text" name="SHOW_ADD" id="SHOW_ADD" size="70"></td></tr>
+<tr>
+	<td>주차가격정보</td>
+	<td><input type="text" id="parkInfo" name="parkInfo"></td>
+</tr>
+
 
 <tr>
 	<td>운영시간</label></td>
@@ -53,19 +58,7 @@
 	<input type="checkbox" name="op24" value="24시간">24시간
 	</td>
 </tr>
-<tr>
-	<td>정기권(시간별)</label></td>
-	<td>
-	<select name=pb_standard>
-		<option value='1시간권'>1시간권</option>
-        <option value='3시간권'>3시간권</option>
-        <option value='5시간권'>5시간권</option>
-        <option value='종일권'>종일권</option>
-	</select>
-	<br/>
-	기타 : <input type="text" class="pbS" id="pbS" placeholder="기타 사항을 입력하세요.">
-	</td>
-</tr>
+
 <tr><td><label for="car_ava">총 주차 가능대수</label></td><td><input type="text" name="car_ava" id="car_ava">대</td></tr>
 <tr>
 	<td><label for="use_method">이용방법</label></td>
